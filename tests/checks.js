@@ -153,7 +153,7 @@ describe('Pull Request', function () {
         should.not.exist(error_repo);
     });
 
-    it(`Comprobando que la rama ${BRANCH_NAME} está integrada en la rama 'master' del repositorio principal`, async function () {
+    it(`Comprobando que la rama '${BRANCH_NAME}'' está integrada en la rama 'master' del repositorio principal`, async function () {
         const expected = "inverse";
         this.score = 2;
         if (error_critical1) {

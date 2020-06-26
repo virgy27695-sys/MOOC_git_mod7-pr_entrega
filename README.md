@@ -133,7 +133,6 @@ Utilizar los comandos ya vistos en los pasos anteriores y en las transparencias.
 
 
 
-
 ## Descargar el código del proyecto
 
 El proyecto debe clonarse en el ordenador desde el que se está trabajando:
@@ -189,13 +188,13 @@ $ npx moocauto                 ## Pasa los tests al fichero a entregar
 
 El evaluador debe comprobar que en ambas cuentas está el repositorio "MOOC_git_mod7-cal_2com". A ambos repositorios se se debe haber añadido todos los commits que se han especificado en la practica. En el último commit de master el repositorio "MOOC_git_mod7-cal_2com" incorpora un título con el nombre de la persona que hace la entrega y todos los botones incorporados. 
 
-RÚBRICA: La resolución de cada uno de estos puntos dará un el % indicado de la nota total: 
--	10%:  Existe el repositorio "MOOC_git_mod7-cal_2com" en cuenta 2
--	10%:  Existe el repositorio "MOOC_git_mod7-cal_2com" en cuenta 1 y es el origen del Fork del repo de cuenta 2
--	10%:  La rama master del repo de cuenta 2 tiene como tercer commit "Título con autor"
--	10%:  El repo de cuenta 2 tiene una rama inverse integrada con master
--	10%:  La rama master del repo de cuenta 2 tiene como último commit "1/x button"
--	20%:  Que el fichero calculator.html de este último commit funciona, tiene el título requerido y los botones x^2 y 1/x
--	30%:  Que el repositorio MOOC_git_mod7-cal_2com en cuenta_1 tiene una rama master con los mismos commits de master del repo MOOC_git_mod7-cal_2com de cuenta 2
+**RÚBRICA:** La resolución de cada uno de estos puntos dará un el % indicado de la nota total: 
+*	**10%**:  Existe el repositorio "MOOC_git_mod7-cal_2com" en cuenta 2
+*	**10%**:  Existe el repositorio "MOOC_git_mod7-cal_2com" en cuenta 1 y es el origen del Fork del repo de cuenta 2
+*	**10%**:  La rama master del repo de cuenta 2 tiene como tercer commit "Título con autor"
+*	**10%**:  El repo de cuenta 2 tiene una rama inverse integrada con master
+*	**10%**:  La rama master del repo de cuenta 2 tiene como último commit "1/x button"
+*	**20%**:  Que el fichero calculator.html de este último commit funciona, tiene el título requerido y los botones x^2 y 1/x
+*	**30%**:  Que el repositorio MOOC_git_mod7-cal_2com en cuenta_1 tiene una rama master con los mismos commits de master del repo MOOC_git_mod7-cal_2com de cuenta 2
 
 

@@ -192,7 +192,7 @@ Se puede pasar la herramienta de autocorrección tantas veces como se desee.
 
 ## Entrega de la práctica
 
-El alumno debe entregar el nombre de la cuenta de Github donde ha subido su práctica.
+El alumno debe entregar el nombre de las 2 cuentas de Github donde ha subido su práctica.
 
 ## Evaluación de la práctica
 

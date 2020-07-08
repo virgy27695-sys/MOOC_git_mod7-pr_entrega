@@ -47,7 +47,7 @@ $ git clone https://github.com/<tu_cuenta_2>/MOOC_git_mod7-cal_2com
 
 ### Paso 4: Añadir cambios 
 
-Entramos en el directorio de trabajo del nuevo repositorio clonado y añadir al fichero calculator.html, al principio del bloque &lt;body&gt; de HTML, un título <h1> con su nombre y apellidos. 
+Entramos en el directorio de trabajo del nuevo repositorio clonado y añadir al fichero calculator.html, al principio del bloque &lt;body&gt; de HTML, un título &lt;h1&gt; con su nombre y apellidos. 
 
 ```
 $ cd MOOC_git_mod7-cal_2com 

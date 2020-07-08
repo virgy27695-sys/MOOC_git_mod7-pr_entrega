@@ -21,7 +21,7 @@ Luego clonamos el repositorio "MOOC_git_mod7-cal_2com" de <tu_cuenta_2> en un re
 
 Copiamos la rama "inverse" del repositorio [https://github.com/ging-moocs/https://github.com/ging-moocs/MOOC_git_mod7-cal_branches](https://github.com/ging-moocs/https://github.com/ging-moocs/MOOC_git_mod7-cal_branches) a nuestro repositorio local. Esta rama tiene 3 commits, el primero y el segundo son los mismos que los dos primeros de la rama master de "cal_2com" y el tercero añade el botón 1/x a la calculadora.
 
-Integramos primero la rama master en la rama inverse. La integración debe incorporar el título <h1> de la rama master y los dos los botones x^2 y 1/x de la rama inverse.
+Integramos primero la rama master en la rama inverse. La integración debe incorporar el título &lt;h1&gt; de la rama master y los dos los botones x^2 y 1/x de la rama inverse.
 
 Integramos a continuación también la rama inverse en la rama master (con FF)y subimos ambas ramas al repositorio origen de la clonación en la segunda cuenta.
 

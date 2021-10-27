@@ -17,11 +17,11 @@ En esta práctica vamos a duplicar el repositorio [https://github.com/ging-moocs
 
 Primero vamos a crear una organización o una segunda cuenta con un nombre diferente (<tu_cuenta_2>) en GitHub. A continuación duplicamos el repositorio (https://github.com/<mi_usuario_de_github>/MOOC_git_mod7-cal_2com), ya clonado en la primera cuenta, en esta última.
 
-Luego clonamos el repositorio "MOOC_git_mod7-cal_2com" de <tu_cuenta_2> en un repositorio local y creamos un nuevo commit en la rama "master" del repositorio local que añada al fichero calculator.html una cabecera HTML (<h1>) al comienzo del body con el texto "Calculadora de <nombre y apellidos>".
+Luego clonamos el repositorio "MOOC_git_mod7-cal_2com" de <tu_cuenta_2> en un repositorio local y creamos un nuevo commit en la rama "master" del repositorio local que añada al fichero calculator.html una cabecera HTML (&lt;h1&gt;) al comienzo del body con el texto "Calculadora de <nombre y apellidos>".
 
 Copiamos la rama "inverse" del repositorio [https://github.com/ging-moocs/https://github.com/ging-moocs/MOOC_git_mod7-cal_branches](https://github.com/ging-moocs/https://github.com/ging-moocs/MOOC_git_mod7-cal_branches) a nuestro repositorio local. Esta rama tiene 3 commits, el primero y el segundo son los mismos que los dos primeros de la rama master de "cal_2com" y el tercero añade el botón 1/x a la calculadora.
 
-Integramos primero la rama master en la rama inverse. La integración debe incorporar el título <h1> de la rama master y los dos los botones x^2 y 1/x de la rama inverse.
+Integramos primero la rama master en la rama inverse. La integración debe incorporar el título &lt;h1&gt; de la rama master y los dos los botones x^2 y 1/x de la rama inverse.
 
 Integramos a continuación también la rama inverse en la rama master (con FF)y subimos ambas ramas al repositorio origen de la clonación en la segunda cuenta.
 
@@ -47,7 +47,7 @@ $ git clone git@github.com:<tu_cuenta_2>/MOOC_git_mod7-cal_2com
 
 ### Paso 4: Añadir cambios 
 
-Entramos en el directorio de trabajo del nuevo repositorio clonado y añadir al fichero calculator.html, al principio del bloque <body> de HTML, un título <h1> con su nombre y apellidos. 
+Entramos en el directorio de trabajo del nuevo repositorio clonado y añadir al fichero calculator.html, al principio del bloque &lt;body&gt; de HTML, un título &lt;h1&gt; con su nombre y apellidos. 
 
 ```
 $ cd MOOC_git_mod7-cal_2com 

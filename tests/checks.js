@@ -5,7 +5,7 @@
 
 // IMPORTS
 const git = require('simple-git/promise');
-const Utils = require("./utils");
+const Utils = require("./testutils");
 const to = require("./to");
 const path = require('path');
 const fs = require('fs-extra');
@@ -153,7 +153,7 @@ describe('Pull Request', function () {
         should.not.exist(error_repo);
     });
 
-    it(`Comprobando que la rama '${BRANCH_NAME}'' está integrada en la rama 'master' del repositorio principal`, async function () {
+    it(`Comprobando que la rama '${BRANCH_NAME}' está integrada en la rama 'master' del repositorio principal`, async function () {
         const expected = "inverse";
         this.score = 2;
         if (error_critical1) {
@@ -162,6 +162,7 @@ describe('Pull Request', function () {
         } else {
             this.msg_ok = `Se ha encontrado '${expected}' en la rama 'master' de ${REPO_URL}`;
             [error_log, log] = await to(mygit.log());
+
             if (error_log) {
                 this.msg_err = `Error al leer los logs de ${PATH_REPO}`;
                 error_critical1 = this.msg_err;
@@ -182,6 +183,7 @@ describe('Pull Request', function () {
         } else {
             this.msg_ok = `Se ha encontrado '${expected}' en la rama master de ${REPO_URL}`;
             [error_log, log] = await to(mygit.log());
+
             if (error_log) {
                 this.msg_err = `Error al leer los logs de ${PATH_REPO}`;
                 error_critical1 = this.msg_err;

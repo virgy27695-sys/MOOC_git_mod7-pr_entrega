@@ -1,12 +1,6 @@
-/**
- * Checker Script for mooc_git-entrega4_branch
- */
-
-
 // IMPORTS
 const git = require('simple-git/promise');
 const Utils = require("./testutils");
-const to = require("./to");
 const path = require('path');
 const fs = require('fs-extra');
 
@@ -58,14 +52,14 @@ describe('Pull Request', function () {
         const expected = AUXILIARY_REPO_URL;
         this.score = 1;
         this.msg_ok = `Encontrado ${expected}`;
-        [_, _] = await to(fs.remove(PATH_REPO));
-        [error_repo, _] = await to(mygit.clone(expected));
+        [_, _] = await Utils.to(fs.remove(PATH_REPO));
+        [error_repo, _] = await Utils.to(mygit.clone(expected));
         if (error_repo) {
             this.msg_err = `No se encuentra ${expected}`;
             error_critical1 = this.msg_err;
             should.not.exist(error_critical1);
         }
-        await to(mygit.cwd(PATH_REPO));
+        await Utils.to(mygit.cwd(PATH_REPO));
         should.not.exist(error_repo);
     });
 
@@ -80,7 +74,7 @@ describe('Pull Request', function () {
         } else {
             let output;
             this.msg_ok = `Encontrada la rama '${BRANCH_NAME}'`;
-            [error_branch, branches] = await to(mygit.branch());
+            [error_branch, branches] = await Utils.to(mygit.branch());
             if (error_branch) {
                 this.msg_err = `Error al leer las ramas en ${PATH_REPO}`;
                 error_critical1 = this.msg_err;
@@ -106,7 +100,7 @@ describe('Pull Request', function () {
             should.not.exist(error_critical1);
         } else {
             this.msg_ok = `La rama 'master' está integrada en '${BRANCH_NAME}' en ${AUXILIARY_REPO_URL}`;
-            [error_log, log] = await to(mygit.log([`origin/${BRANCH_NAME}`]));
+            [error_log, log] = await Utils.to(mygit.log([`origin/${BRANCH_NAME}`]));
             if (error_log) {
                 this.msg_err = `Error al leer los logs de ${PATH_REPO}`;
                 error_critical1 = this.msg_err;
@@ -126,7 +120,7 @@ describe('Pull Request', function () {
             should.not.exist(error_critical1);
         } else {
             this.msg_ok = `La rama '${BRANCH_NAME}' está integrada en 'master' en ${AUXILIARY_REPO_URL}`;
-            [error_log, log] = await to(mygit.log());
+            [error_log, log] = await Utils.to(mygit.log());
             if (error_log) {
                 this.msg_err = `Error reading logs from ${PATH_REPO}`;
                 error_critical1 = this.msg_err;
@@ -142,15 +136,15 @@ describe('Pull Request', function () {
         const expected = REPO_URL;
         this.score = 1;
         this.msg_ok = `Se ha encontrado ${expected}`;
-        await to(mygit.cwd(PATH_ASSIGNMENT));
-        [_, _] = await to(fs.remove(PATH_REPO));
-        [error_repo, _] = await to(mygit.clone(expected));
+        await Utils.to(mygit.cwd(PATH_ASSIGNMENT));
+        [_, _] = await Utils.to(fs.remove(PATH_REPO));
+        [error_repo, _] = await Utils.to(mygit.clone(expected));
         if (error_repo) {
             this.msg_err = `No se encuentra ${expected}`;
             error_critical2 = this.msg_err;
             should.not.exist(error_critical2);
         }
-        await to(mygit.cwd(PATH_REPO));
+        await Utils.to(mygit.cwd(PATH_REPO));
         should.not.exist(error_repo);
     });
 
@@ -162,7 +156,7 @@ describe('Pull Request', function () {
             should.not.exist(error_critical1);
         } else {
             this.msg_ok = `Se ha encontrado '${expected}' en la rama 'master' de ${REPO_URL}`;
-            [error_log, log] = await to(mygit.log());
+            [error_log, log] = await Utils.to(mygit.log());
 
             if (error_log) {
                 this.msg_err = `Error al leer los logs de ${PATH_REPO}`;
@@ -183,7 +177,7 @@ describe('Pull Request', function () {
             should.not.exist(error_critical1);
         } else {
             this.msg_ok = `Se ha encontrado '${expected}' en la rama master de ${REPO_URL}`;
-            [error_log, log] = await to(mygit.log());
+            [error_log, log] = await Utils.to(mygit.log());
 
             if (error_log) {
                 this.msg_err = `Error al leer los logs de ${PATH_REPO}`;

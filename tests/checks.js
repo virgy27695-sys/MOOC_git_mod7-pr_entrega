@@ -38,7 +38,7 @@ describe('Pull Request', function () {
         this.msg_err = "No se ha encontrado el fichero 'git_account' que debe contener el nombre de usuario de github";
 
         account_student = fs.readFileSync(path.join(PATH_ASSIGNMENT, 'git_account'), {encoding: 'utf8'}).replace(/^\s+|\s+$/g, '');;
-        REPO_URL = `https://github.com/${account_student}/${REPO_NAME}`;
+        REPO_URL = `git@github.com:${account_student}/${REPO_NAME}.git`;
         this.msg_ok = `Se ha encontrado el fichero 'git_account': ${account_student}`;
         should.exist(account_student);
     });
@@ -48,7 +48,8 @@ describe('Pull Request', function () {
         this.msg_err = "No se ha encontrado el fichero 'git_account2' que debe contener el nombre de usuario de github";
 
         account_auxiliary = fs.readFileSync(path.join(PATH_ASSIGNMENT, 'git_account2'), {encoding: 'utf8'}).replace(/^\s+|\s+$/g, '');;
-        AUXILIARY_REPO_URL = `https://github.com/${account_auxiliary}/${REPO_NAME}`;
+        AUXILIARY_REPO_URL = `git@github.com:${account_auxiliary}/${REPO_NAME}`;
+        
         this.msg_ok = `Se ha encontrado el fichero 'git_account2': ${account_auxiliary}`;
         should.exist(account_auxiliary);
     });

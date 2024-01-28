@@ -5,6 +5,8 @@
 
 # Módulo 7: Contribuir a repositorios de terceros con pull-request, integración automática, y comandos Git: branch, clone, fetch, merge, pull y push - Entrega P2P: Pull Request
 
+Versión: 28 de enero de 2024
+
 ## Objetivos
  * Usar dos repositorios remotos, uno como respaldo del repositorio de trabajo local y otro como repositorio central donde las contribuciones se envían con pull-request. 
  * Practicar con ramas remotas de diversos tipos
